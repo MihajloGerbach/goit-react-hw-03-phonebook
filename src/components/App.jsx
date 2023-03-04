@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import contacts from '../contacts.json'
+import contacts from '../contacts.json';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
@@ -19,7 +19,7 @@ componentDidMount() {
       this.setState({ contacts: parsedContacts });
       return;
     }
-    this.setState({ contacts: contacts });
+    this.setState({ contacts: [] });
   }
 
   componentDidUpdate(prevProps, prevState) {
