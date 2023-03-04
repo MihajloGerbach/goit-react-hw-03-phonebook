@@ -19,7 +19,7 @@ componentDidMount() {
       this.setState({ contacts: parsedContacts });
       return;
     }
-    this.setState({ contacts: [] });
+    this.setState({ contacts: contacts });
   }
 
   componentDidUpdate(prevProps, prevState) {
